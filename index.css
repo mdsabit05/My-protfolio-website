@@ -12,10 +12,6 @@ a {
 /* .......Nav-Bar........*/
 
 .header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
   font-size: 25px;
   padding-left: 20px;
   color: white;
@@ -47,6 +43,7 @@ a {
 }
 .contbutton {
   position: fixed;
+   z-index: 9999;
   left: 1364px;
   background: none;
   border: none;
@@ -60,7 +57,6 @@ a {
 }
 .contact {
   color: white;
-  font-size: medium;
   font-family: 'Inter', sans-serif; 
   text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
@@ -93,21 +89,23 @@ a {
   padding: 0px;
 }
 .name {
-  margin-right: 1080px;
   position: fixed;
   padding-top: 15px;
+   z-index: 9999;
 }
 #home {
   cursor: pointer;
   position: fixed;
   left: 1146px;
   padding-top: 15px;
+   z-index: 9999;
 }
 #abt {
   cursor: pointer;
   position: fixed;
   left: 1255px;
   padding-top: 15px;
+   z-index: 9999;
 }
 
 /* ........First page........*/
@@ -249,7 +247,7 @@ a {
   font-family: 'Inter', sans-serif; 
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
-.box2 {
+.box1 ,.box2 {
   height: 420px;
   width: 430px;
   background: rgba(255, 255, 255, 0.1);
@@ -350,5 +348,261 @@ a {
   to {opacity: 1; transform: translateY(0);}
 }
 
-/* contact */
+@media screen and (max-width: 780px) {
+ 
+  #home {
+    left : 390px;
+  }
+  #abt {
+    left: 490px;
+  }
+  .contbutton {
+    left: 590px;
+  }
+  #contactcard {
+    left: 10%;
+    top: 17%;
+    height: 140px;
+    width: 310px;
+  }
+  .contHeader {
+    gap: 0rem;
+  }
+  .contactcardText {
+    font-size: 21px;
+    padding-right: 118px;
+  }
+  #closebutton {
+    font-size: 21px ;
+  }
+  .contList {
+    font-size: 13px;
+    padding-left: 26px;
+  }
+  #page-1 {
+  height: 535px;
+  padding-top: 90px;
+  }
+  .main-body {
+    margin-left: 30px;
+    margin-top: 106px;
+  }
+  .left {
+  gap: 1rem;
+}
+.intro {
+  font-size: 3rem;
+}
+.short-bio {
+  font-size: 18px;
+}
+.img1 {
+  height: 218px;
+  width: 210px;
+}
+#page-2 {
+  height: 470px;
+} 
+.box {
+  justify-content: unset;
+   padding-left: 23px;
+   gap: 1rem;
+}
+.box1 , .box2 {
+    height: 345px;
+    width: 331px;
+}
+.Text {
+  font-size: 1.5rem;
+}
+.skillImage {
+  margin-left: 27px;
+  margin-top: 21px;
+  height: 103px;
+  width: 266px;
+}
+.box1Text {
+  padding: 17px;
+  font-size: 17px;
 
+}
+.projectbox {
+  gap: 0rem;
+  margin: -7px;
+}
+.pianoProject {
+  height: 80px;
+  width: 80px;
+}
+.projecttext {
+  font-size: 16px;
+}
+.odinProject {
+  height: 80px;
+  width: 80px;
+}
+.LTSProject {
+  margin-top: 21px;
+  height: 80px;
+  width: 80px;
+}
+.buttn {
+  margin-left: 234px;
+  margin-top: 12px;
+}
+#about {
+  padding: 95px 34px ;
+  margin: 10px;
+}
+.about-card {
+  padding: 37px ;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+.header {
+  font-size: 20px;
+}
+  #home {
+    left : 235px;
+  }
+  #abt {
+    left: 310px;
+  }
+  .contbutton {
+    left: 380px;
+    font-size: 20px;
+  }
+  #contactcard {
+    left: 0%;
+    top: 17%;
+    height: 140px;
+    width: 310px;
+  }
+  .contHeader {
+    gap: 0rem;
+  }
+  .contactcardText {
+    font-size: 21px;
+    padding-right: 118px;
+  }
+  #closebutton {
+    font-size: 21px ;
+  }
+  .contList {
+    font-size: 13px;
+    padding-left: 26px;
+  }
+  #page-1 {
+  height: 535px;
+  padding-top: 90px;
+  }
+  .main-body {
+    margin-left: 30px;
+    margin-top: 106px;
+    gap: 1rem;
+  }
+  .left {
+  gap: 1rem;
+}
+.intro {
+  font-size: 58px;
+  padding-left: 23px;
+}
+.short-bio {
+  font-size: 15px;
+  padding-left: 30px;
+  padding-top: 6px;
+}
+  .img1 {
+    display: none;
+}
+.page1button {
+  padding-left: 41px;
+}
+
+
+#page-2 {
+  height: auto;  
+
+  }
+  .box {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 0px;
+  }
+ 
+
+  .box1, .box2 {
+     width: 408px;
+     height: 330px;
+     margin-right: 1075px;
+  }
+   .box2 {
+     height: 330px;
+       width: 383px;
+     margin-right: 1075px;
+    padding-left: 32px;
+  }
+  
+.Text {
+  font-size: 1.5rem;
+}
+.skillImage {
+  margin-left: 27px;
+  margin-top: 21px;
+  height: 103px;
+  width: 266px;
+}
+.box1Text {
+  padding: 17px;
+  font-size: 17px;
+}
+.projectbox {
+  gap: 0rem;
+  margin: -7px;
+}
+.pianoProject {
+  height: 80px;
+  width: 80px;
+}
+.projecttext {
+  font-size: 16px;
+}
+.odinProject {
+  height: 80px;
+  width: 80px;
+}
+.LTSProject {
+  margin-top: 21px;
+  height: 80px;
+  width: 80px;
+}
+.buttn {
+ display: none;
+}
+#about {
+  padding: 95px 34px ;
+  margin: 10px;
+}
+.about-card {
+  padding: 37px ;
+}
+.about-card h2 {
+  font-size: 26px;
+  margin-bottom: -8px;
+}
+.skills {
+  padding-left: 10px;
+}
+.skills li {
+  font-size: 20px;
+ 
+}
+}
