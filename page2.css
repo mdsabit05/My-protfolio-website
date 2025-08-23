@@ -191,6 +191,7 @@ button:focus, button:active {
   background-image: url(images/download2.png);
   background-size: cover;
   margin-left: 73px;
+  margin-top: 0.5vw;
 }
 .projecttext {
   font-size: 1.1rem;
@@ -307,6 +308,9 @@ button:focus, button:active {
   font-size: 20px;
   margin-bottom: 5vh;
 }
+.LTSProject {
+   margin-top: 2vw;
+}
   
 }
 
@@ -338,6 +342,9 @@ button:focus, button:active {
     font-size: 20px;
     margin-bottom: 5vh;
   }
+  .LTSProject {
+   margin-top: 2vw;
+}
   
 
 }
@@ -434,6 +441,7 @@ button:focus, button:active {
   background-image: url(images/download2.png);
   background-size: cover;
   margin-left: 24px;
+   margin-top: 7vw;
 }
 .projecLTStext {
     font-size: 1.2rem;
