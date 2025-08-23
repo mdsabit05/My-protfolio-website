@@ -287,8 +287,8 @@ button:focus, button:active {
     font-size: 3.4vw;
   }
   .right {
-    height: 28vw;
-    width: 35vw;
+    height: 30vw;
+    width: 32vw;
     margin-right: 2vw;
   }
   .btn {
@@ -297,7 +297,7 @@ button:focus, button:active {
   }
 }
 
-@media (max-width : 434px) {
+@media (max-width : 504px) {
   header {
      height: 64px;
   }
@@ -319,7 +319,8 @@ button:focus, button:active {
    width: 82vw;
    height: 35%;
    padding-right: 33vw;
-   margin-top: 14vw;
+   margin-bottom: 0vw;
+   padding-top: 0vw;
   }
  .left h1 {
   font-size: 9.53vw;
@@ -339,9 +340,12 @@ button:focus, button:active {
     height: 64vw;
     width: 78vw;
     margin-left: 3vw;
-    margin-bottom: 39vw;
+    margin-bottom: 0vw;
     }
  .btn {
   margin-top: 5vw;
+ }
+ #page1 {
+  height: 85%;
  }
 }

@@ -296,14 +296,28 @@ button:focus, button:active {
     height: 99%;
     padding-left: 22px;
     padding-right: 14px;
-    padding-bottom: 133px;
+    padding-bottom: 153px;
+    margin-top: 5vw;
   }
+  .about-card h2 {
+    font-size: 8vw;
+  }
+
 }
 
 @media (max-height : 548px) {
-  .about-card {
-    margin-top: 32vw;
-    height: 47vw;
-  }
+      .about-card {
+        height: 100%;
+        margin-top: 16vh;
+        padding-bottom: 23vw;
+    }
   
 }
+@media (max-height : 480px) {
+      .about-card {
+        margin-top: 50vw;
+        height: 63vw;
+        padding-bottom: 0px;
+    }
+}
+  

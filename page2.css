@@ -170,45 +170,45 @@ button:focus, button:active {
   margin: 0px;
 }
 .pianoProject {
-  height: 100px;
-  width: 100px;
+  height: 6vw;
+  width: 6vw;
   background-image: url(images/piano.png);
   background-size: cover;
   padding: 11px;
   margin-left: 62px;
 }
 .odinProject {
-  height: 94px;
-  width: 106px;
+  height: 6vw;
+  width: 6vw;
   background-image: url(images/download.png);
   background-size: cover;
   padding: 10px;
   margin-left: 41px;
 } 
 .LTSProject {
-  height: 103px;
-  width: 102px;
+  height: 6vw;
+  width: 6vw;
   background-image: url(images/download2.png);
   background-size: cover;
   margin-left: 73px;
   margin-top: 0.5vw;
 }
 .projecttext {
-  font-size: 1.1rem;
+  font-size: 1.2vw;
   font-family: 'Inter', sans-serif; 
   padding-left: 71px;
   padding-top: 7px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .projectodintext {
-  font-size: 1.1rem;
+   font-size: 1.2vw;
   font-family: 'Inter', sans-serif; 
   padding-left: 54px;
   padding-top: 15px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .projecLTStext {
-  font-size: 1.1rem;
+  font-size: 1.2vw;
   font-family: 'Inter', sans-serif; 
   padding-left: 79px;
   padding-top: 11px;
@@ -267,9 +267,27 @@ button:focus, button:active {
     width: 6vw;
 
   }
+    .pianoProject , .LTSProject , .odinProject{
+    height : 8vw ;
+    width : 8vw ;
+    margin-left: 4vw;
+  }
+.projecttext , .projecLTStext , .projectodintext {
+  font-size: 1.7vw;
+  padding-left: 4vw;
+}
   
 }
 
+@media(max-width :1110px) {
+  .pianoProject , .LTSProject , .odinProject{
+    height : 9vw ;
+    width : 9vw ;
+  }
+.projecttext , .projecLTStext , .projectodintext {
+  font-size: 2vw;
+}
+}
 
 
 
@@ -308,9 +326,13 @@ button:focus, button:active {
   font-size: 20px;
   margin-bottom: 5vh;
 }
-.LTSProject {
-   margin-top: 2vw;
-}
+ .pianoProject , .LTSProject , .odinProject{
+    height : 11vw ;
+    width : 11vw ;
+  }
+  .odinProject {
+    margin-left: 4vw;
+  }
   
 }
 
@@ -342,9 +364,21 @@ button:focus, button:active {
     font-size: 20px;
     margin-bottom: 5vh;
   }
-  .LTSProject {
-   margin-top: 2vw;
+  .pianoProject, .LTSProject, .odinProject {
+    height: 16vw;
+    width: 16vw;
+    margin-left: 6vw;
+    }
+    .projecttext , .projecLTStext , .projectodintext {
+  font-size: 3.5vw;
 }
+.odinProject {
+   margin-left: 10vw;
+}
+ .projectodintext {
+  margin-left: 5vw;
+}
+   
   
 
 }
@@ -412,44 +446,32 @@ button:focus, button:active {
 .projectbox {
   gap: 0rem;
 }
-.pianoProject {
-  padding: 0px;
-  margin-left: 23px;
-}
-.projecttext {
-  font-size: 1.2rem;
-  font-family: 'Inter', sans-serif;
-  padding-left: 27px;
-  padding-top: 10px;
-}
-.odinProject {
-  height: 80px;
-  width: 85px;
-  background-size: cover;
-  padding: 11px;
-  margin-left: 56px;
-}
 
-.projectodintext {
-  font-size: 1.2rem;
-  font-family: 'Inter', sans-serif;
-  padding-left: 62px;
-  padding-top: 10px;
-}
-.LTSProject {
-  width: 124px;
-  background-image: url(images/download2.png);
-  background-size: cover;
-  margin-left: 24px;
-   margin-top: 7vw;
-}
-.projecLTStext {
-    font-size: 1.2rem;
-    font-family: 'Inter', sans-serif;
-    padding-left: 39px;
-}
 .box2 {
-  height: 94vw;
+  height: 104vw;
+}
+.pianoProject, .LTSProject, .odinProject {
+    height: 26vw;
+    width: 26vw;
+    margin-left: 7vw;
+}
+    .projecttext, .projecLTStext, .projectodintext {
+        font-size: 4.7vw;
+        padding-left: 7vw;
+    }
 }
 
+
+@media (max-width : 370px) {
+  .box {
+    gap:1rem;
+  }
+  .box1 {
+    height: 115vw;
+  }
+  
+  .box2 {
+    height: 115vw;
+  }
+  
 }
