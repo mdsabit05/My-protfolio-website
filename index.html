@@ -1,115 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
- <link rel="icon" type="image/png" href="images/protfolio.ico">
+  <link rel="icon" type="image/png" href="images/logo.png">
   <title>My Protfolio</title>
 </head>
-
 <body>
-  <div class="header">
-    <div class="name">Md Sabit.</div>
-    <a href="#page-1">
-      <div id="home">home</div>
-    </a>
-    <a href="#about">
-      <div id="abt">About</div>
-    </a>
-    <button class="contbutton" id="contbutton">Contact</button>
+  <header>
+    <div class="nav1">
+      <img src="images/logo.png" alt="" id="logo">
+      <button class="button" id="homebtn">Home</button>
   </div>
-  <section id="page-1">
-    <div class="main-body">
-      <div class="left">
-        <div class="intro-bio">
-          <div class="intro">Hello! <br> I'm Md Sabit</div>
-          <div class="short-bio">I'am a web developer</div>
-          <div class="short-bio">who love to build project.</div>
-        </div>
-        <div>
-          <div class="page1button">
-            <a href="#page-2">
-             <button class="btn">My skills and projects</button>
-            </a>
-            <a href="#about">
-              <button class="btn" id="btn-abt">About me</button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="img1"></div>
+     <div class="nav">
+       <button class="button" id="aboutbtn">About</button>
+        <button class="button" id="contactbtn">Contact</button>
+     </div>
+  </header>
+  <main id="page1">
+    <div class="left">
+      <h1>Hello! <br>
+      This is Md Sabit</h1>
+      <p>I'am a web developer with a passion for creating impactful projects.</p>
+
+       <button class="btn" id="page2btn"> Explore my skills and project</button>
     </div>
-  </section>
-
-  <section id="page-2">
-    <div class="box">
-      <div class="box1">
-        <h2 class="Text">My Skills</h2>
-        <div class="skillImage"></div>
-        <div class="box1Text">I craft websites with clean code and modern design. Skilled in HTML, CSS, and JavaScript, exploring React to take my projects to the next level. Always learning, always building.</div>
-      </div>
-      <div class="box2">
-        <h2 class="Text">My Projects</h2>
-        <div class="projectbox">
-          <a href="https://mdsabit05.github.io/Piano-melody/"> 
-            <div class="pianoProject"></div>
-            <div class="projecttext">Piano melody</div>
-          </a>
-          <a href="https://mdsabit05.github.io/Project-1/"> 
-            <div class="odinProject"></div>
-            <div class="projecttext">Odin's recipe</div>
-          </a>
-          <a href="https://mdsabit05.github.io/The-little-Taco-shop/"> 
-            <div class="LTSProject"></div>
-            <div class="projecttext">Taco shop</div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="buttn">
-      <a href="#page-1" class="btn">Back to top</a>
-      <a href="#about">
-        <button class="btn" id="btn-abt">About me</button>
-      </a>
-    </div>
-  </section>
-
-  <!--about-->
-  <section id="about">
-    <div class="about-card">
-      <h2>About Me</h2>
-      <p class="para-abtcard">My name is Md Sabit Raza, I have keen interest in technology and programming</p>
-
-      <ul class="skills">
-        <li>💻 Skilled in <b>HTLM , CSS and JAVA SCRIPT</b></li>
-        <li>🚀 Learning <b>React</b></li>
-        <li>📚 Pursuing <b>BCA (Bachlore of computer Application)</b></li>
-        <li>🎯 Goal: Fullstack + AI Developer(LLM)</li>
-      </ul>
-
-      <p class="para-abtcard">✨ I am focused on improving my coding skills, working on small projects, and gradually
-        moving towards advanced concepts in full-stack development. </p>
-
-      <a href="#page-1" class="btn">Back to top</a>
-    </div>
-  </section>
-
-  <section id="contactcard">
-    <div class="contact">
-      <div class="contHeader">
-        <div class="contactcardText">Contact</div>
-        <button id="closebutton">X</button>
-      </div>
-      <ul class="contList">
-        <li>📧 Email - mdsabitrazabarkati@gmail.com</li>
-        <li>📞 Phone - 7978152181</li>
-        <li>📍 Location - Sambalpur, Odisha(768001)</li>
-      </ul>
-    </div>
-  </section>
+    <div class="right"></div>
+  </main>
+ 
   <script src="index.js"></script>
 </body>
-
 </html>

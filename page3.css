@@ -8,8 +8,7 @@ body , html {
 }
 a {
   text-decoration: none;
-    color: #000;
-
+  color: #000;
 }
 
 header {
@@ -22,9 +21,9 @@ header {
   align-items: center;
   font-size: 1.45vw;
   padding-bottom: 1.5vw; 
-  backdrop-filter: blur(10px);
+  /* background-color: #d1fff9; */
+   backdrop-filter: blur(10px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-  
   
 }
 .nav1 {
@@ -39,7 +38,6 @@ header img {
   margin-top: 0.8vw;
   margin-left: 1vw;
   cursor: pointer;
-
 }
 .nav {
   display: flex;
@@ -57,16 +55,7 @@ header img {
   font-family:'Times New Roman', Times, serif;
   cursor: pointer;
   transition: color 0.3s ease;
-}
-button {
-  -webkit-tap-highlight-color: transparent; 
-  outline: none;
-}
 
-button:focus, button:active {
-  outline: none;
-  box-shadow: 0 0 10px rgba(0,0,0,0.25); /* soft shadow glow */
-  border-radius: 5px;
 }
 .button::after {
   content: "";
@@ -86,37 +75,65 @@ button:focus, button:active {
 .button:hover::after {
   width: 100%;
 }
-#page1 {
-  height: calc(100% - 89px);
-  width: 100%;
+
+button {
+  -webkit-tap-highlight-color: transparent; 
+  outline: none;
+}
+
+button:focus, button:active {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25); /* soft shadow glow */
+  border-radius: 5px;
+}
+
+
+/* .......Third Page....... */
+
+#about {
+  height: calc(100% - 278px);
   display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
- text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 95px 20px;
 }
-.left {
-  /* background-color: white; */
-  height: 100%;
-  width: 50%;
+.about-card {
+  height: 520px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  color: #000000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
-.left h1 {
-  font-size: 5.5vw;
-  padding-top: 5.3vw;
-  padding-left: 9.5vw;
-  margin-bottom: 0px; 
+
+.about-card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #000000;
+  font-family: 'Inter', sans-serif; 
  
 }
-.left p {
+.skills li {
+  font-size: 24px;
   font-family: 'Inter', sans-serif; 
-  padding-left: 10.5vw;
-  padding-bottom: 1vw;
-  font-size: 2vw;
-  margin: 0px;
- text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 10px 0;
+  transition: transform 0.3s, color 0.3s;
 }
+.skills li:hover {
+  transform: scale(1.05);
+  color: #fff200;
+}
+.para-abtcard {
+  font-size: 17px;
+  font-family: 'Inter', sans-serif; 
+  
+  
+}
+
+
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -130,7 +147,7 @@ button:focus, button:active {
   transform: scale(1.05);
   border: none;
   cursor: pointer;
-  margin-left: 10vw;
+  margin-left: 1vw;
   background-color:#000;
 }
 .btn:hover {
@@ -140,26 +157,6 @@ button:focus, button:active {
   transform: scale(1.05);
   transition: 0.3sec;
 }
-.right {
-  /* background-color: rgb(255, 255, 255); */
-  height: 30vw;
-  width: 38vw;
-  margin-bottom: 20vh;
-  background-image: url(images/Business20man20working-284998.png);
-  background-size: cover;
-  margin-right: 7vw;
-  padding-top:1vh ;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -171,7 +168,7 @@ button:focus, button:active {
     font-size: 2vw;
     gap: 1rem;
   }
-  .nav {
+   .nav {
     gap: 4vw;
     padding: 1vw;
     padding-right: 3vw;
@@ -184,32 +181,40 @@ button:focus, button:active {
     width: 6vw;
 
   }
-  #page1 {
-    height: 85vh;
-    width: 100%;
-  }
-  
 }
 
-@media  (max-width : 1110px) { 
-    .right {
-    margin-bottom: 1vh;
-    padding-right: 5vw;
-    }
-    .right {
-    height: 30vw;
-    width: 33vw;
-    }
-    .btn {
-      padding: 1vw 1.1vw;
-      margin-bottom: 3vw;
-    }
-  }
 
+@media  (max-width : 1110px) { 
+   .about-card {
+    height: 100vh;
+    margin-top: 60vh;
+  }
+}
 
 
 @media  (max-width : 960px) { 
   header {
+    padding: 1vw;
+    height: 69px;
+    font-size: 2.5vw;
+    gap: 1rem;
+  }
+  header img {
+    margin-top: 2vw;
+  }
+  .nav {
+    padding-right: 5vw;
+  }
+  .about-card {
+        height: 55vw;
+        margin-top: 15vw;
+    }
+}
+
+
+
+@media (max-width : 960px) {
+    header {
     padding: 1vw;
     height: 69px;
     font-size: 2.5vw;
@@ -226,23 +231,8 @@ button:focus, button:active {
     font-size: 4vw;
     margin-top: 0vw;
   }
-  #page1 {
-    height: 88vh;
-  }
- 
- .left h1 {
-  font-size: 6.5vw;
-  padding-top: 5.3vw;
-  padding-left: 3.5vw;
-  margin-bottom: 0px;
 }
-.left p {
-  padding-left: 4vw;
-}
-.btn {
-  margin-left: 4vw;
-}
-}
+
 
 
 @media  (max-width : 650px) { 
@@ -265,76 +255,42 @@ button:focus, button:active {
     padding: 0vh;
 
   }
-  #page1 {
-    height: 90vh;
-    width: 100%;
-  }
-  .left {
-    width: 57vw;
-  }
-  .left h1 {
-    font-size: 7.6vw;
-    margin-right:0vw;
-  }
-  .left p {
-    font-size: 3.4vw;
-  }
-  .right {
-    height: 28vw;
-    width: 35vw;
-    margin-right: 2vw;
-  }
-  .btn {
-    margin-top: 2.8vw;
-    margin-left: 5vw;
+  .about-card {
+    height: 100%;
+     margin-top: 0vh;
   }
 }
 
-@media (max-width : 434px) {
+
+@media (max-width : 515px) {
   header {
      height: 64px;
   }
-  
   .nav {
     gap: 0vw;
   }
   .button {
    padding-right: 4vw;
    font-size: 5vw;
- }
- #page1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- }
- 
- .left {
-   width: 82vw;
-   height: 35%;
-   padding-right: 33vw;
-   margin-top: 14vw;
-  }
- .left h1 {
-  font-size: 9.53vw;
-  padding-top : 0vw ;
-  margin-left:  2.5vw;
-  }
-  .left p {
-    font-size: 4.3vw;
-    margin-left:2.7vw ;
+  } 
+
+.about-card {
+  height: 100%;
+  padding-left: 22px;
+  padding-right: 14px;
+  padding-bottom: 63px;
   }
   .btn {
-    padding: 3.5vw;
-    margin-left:7vw ;
-    
+    font-size: 16px;
+    padding: 2vw 3vw;
+    padding-left: 4vw;
   }
- .right {
-    height: 64vw;
-    width: 78vw;
-    margin-left: 3vw;
-    margin-bottom: 39vw;
-    }
- .btn {
-  margin-top: 5vw;
- }
+}
+
+@media (max-height : 548px) {
+  .about-card {
+    margin-top: 32vw;
+    height: 47vw;
+  }
+  
 }

@@ -1,21 +1,27 @@
-const contbutton = document.querySelector("#contbutton");
-const contactcard = document.querySelector("#contactcard");
-const closebutton = document.querySelector("#closebutton");
+const homeButton = document.querySelector("#homebtn");
+const aboutButton = document.querySelector("#aboutbtn");
+const contactButton = document.querySelector("#contactbtn");
+const page2Button = document.querySelector("#page2btn");
+const clickLogo = document.querySelector("#logo");
 
-contbutton.addEventListener("click", () => {
-  contactcard.classList.add("show");
+
+
+
+
+homeButton.addEventListener('click' , ()=> {
+   window.location.href = "index.html"
+});
+aboutButton.addEventListener('click' , ()=> {
+   window.location.href = "page3.html"
+});
+contactButton.addEventListener('click' , ()=> {
+   window.location.href = "contact.html"
+});
+page2Button.addEventListener('click' , ()=> {
+   window.location.href = "page2.html"
+});
+clickLogo.addEventListener('click' , ()=> {
+   window.location.href = "index.html"
 });
 
-closebutton.addEventListener("click", () => {
-  contactcard.classList.remove("show");
-});
 
-document.addEventListener("click", (event) => {
-  const isClickInside = contactcard.contains(event.target);
-  const isButton = contbutton.contains(event.target);
-
-  // Agar na contactcard ke andar click hua aur na hi button pe
-  if (!isClickInside && !isButton) {
-    contactcard.classList.remove("show");
-  }
-});
