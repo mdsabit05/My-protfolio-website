@@ -229,19 +229,26 @@ button:focus, button:active {
   #page1 {
     height: 88vh;
   }
+   .left {
+    padding-top: 27vw;
+  }
  
  .left h1 {
-  font-size: 6.5vw;
+  font-size: 6.6vw;
   padding-top: 5.3vw;
   padding-left: 3.5vw;
   margin-bottom: 0px;
 }
 .left p {
   padding-left: 4vw;
+  font-size: 2.7vw;
 }
 .btn {
+  padding: 1.5vw 1.4vw;
   margin-left: 4vw;
-}
+  margin-bottom: 3vw;
+    }
+
 }
 
 

@@ -185,9 +185,9 @@ button:focus, button:active {
 
 
 @media  (max-width : 1110px) { 
-   .about-card {
-    height: 100vh;
-    margin-top: 60vh;
+  .about-card {
+    height: 100%;
+    margin-top: 1vh;
   }
 }
 
@@ -206,9 +206,10 @@ button:focus, button:active {
     padding-right: 5vw;
   }
   .about-card {
-        height: 55vw;
+        height: 90%;
         margin-top: 15vw;
     }
+ 
 }
 
 
@@ -230,6 +231,15 @@ button:focus, button:active {
   .button {
     font-size: 4vw;
     margin-top: 0vw;
+  }
+  .para-abtcard {
+    font-size: 23px;
+  }
+  .skills li {
+    font-size: 27px;
+  }
+  .about-card h2 {
+    font-size: 5.4vw;
   }
 }
 
@@ -256,8 +266,10 @@ button:focus, button:active {
 
   }
   .about-card {
-    height: 100%;
-     margin-top: 0vh;
+    height: 80%;
+    margin-top: 0vh;
+    padding-bottom: 23vw;
+
   }
 }
 
@@ -274,16 +286,17 @@ button:focus, button:active {
    font-size: 5vw;
   } 
 
-.about-card {
-  height: 100%;
-  padding-left: 22px;
-  padding-right: 14px;
-  padding-bottom: 63px;
-  }
+
   .btn {
     font-size: 16px;
     padding: 2vw 3vw;
     padding-left: 4vw;
+  }
+  .about-card {
+    height: 99%;
+    padding-left: 22px;
+    padding-right: 14px;
+    padding-bottom: 133px;
   }
 }
 
