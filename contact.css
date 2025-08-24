@@ -11,41 +11,6 @@ a {
   text-decoration: none;
   color: #000;
 }
-
-header {
-  height: 63px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.45vw;
-  padding-bottom: 1.5vw; 
-  /* background-color: #d1fff9; */
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-}
-.nav1 {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.65vw;
-
-}
-header img {
-  height: 4vw;
-  width: 4vw;;
-  margin-top: 0.8vw;
-  margin-left: 1vw;
-  cursor: pointer;
-}
-.nav {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 0vw 2vw;
-}
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -69,44 +34,8 @@ header img {
   transform: scale(1.05);
   transition: 0.3sec;
 }
-.button {
-  background: none;
-  font-size: 2.3vw;
-  margin-top: 1vw;
-  border: none;
-  font-weight: 600;
-  font-family:'Times New Roman', Times, serif;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-.button::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background: #000;
-  transition: width 0.3s ease;
-}
 
-.button:hover {
-  color: #ffd700; /* text color change */
-}
 
-.button:hover::after {
-  width: 100%;
-}
-button {
-  -webkit-tap-highlight-color: transparent; 
-  outline: none;
-}
-
-button:focus, button:active {
-  outline: none;
-  box-shadow: 0 0 10px rgba(0,0,0,0.25); /* soft shadow glow */
-  border-radius: 5px;
-}
 
 #contactcard {
   display: flex;
@@ -142,20 +71,6 @@ button:focus, button:active {
 
 
 @media  (max-width : 1240px) { 
-
-  header {
-    padding: 1vw;
-    height: 83px;
-    font-size: 2vw;
-    gap: 1rem;
-  }
-  .button {
-    font-size: 3vw;
-  }
-  header img {
-    height: 6vw;
-    width: 6vw;
-  }
   .contact {
     width: 70%;
     font-size: 2.5vw;
@@ -164,26 +79,6 @@ button:focus, button:active {
 
 
 @media  (max-width : 960px) { 
-  header {
-    padding: 1vw;
-    height: 69px;
-    font-size: 2.5vw;
-    gap: 1rem;
-  }
-  header img {
-    margin-bottom: 1vw;
-    margin-top: 0vw;
-  }
-
-  .nav {
-    gap: 2vw;
-    padding: 2vw;
- }
-
-  .button {
-    font-size: 4vw;
-    margin-top: 0vw;
-  }
   .contact {
     width: 80%;
     font-size: 2.6vw;
@@ -198,23 +93,6 @@ button:focus, button:active {
 
 
 @media  (max-width : 650px) { 
-
-  header {
-    padding: 2vw;
-    height: 90px;
-    gap: 2rem;
-  }
-  .button{
-    gap: 5vw;
-    padding-right: 5vw;
-     font-size: 3.5vw;
-  }
-  header img {
-    height: 11vw;
-    width: 11vw;
-    padding: 1vh;
-
-  }
   .contact {
     width: 90%;
     font-size: 3vw;
@@ -228,21 +106,6 @@ button:focus, button:active {
 } 
 
 @media (max-width : 515px) {
-  header {
-     height: 64px;
-  }
-  header img {
-    padding: 0vh;
-  }
-
-  .nav {
-    gap: 0vw;
-  }
- .button {
-  padding-right: 4vw;
-  font-size: 5vw;
-    margin-top: 2vw;
-  }
 .contact {
   width: 92%;
   font-size: 5vw;
