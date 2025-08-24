@@ -82,4 +82,10 @@ a {
 }
 
 
+@media (max-width :960px){
+.btn {
+font-size: 18px;
+padding: 2vw 3vw;
 
+}
+}
