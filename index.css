@@ -1,16 +1,13 @@
 body , html {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
   background: url(images/8799192.jpg) center / cover no-repeat fixed;
 }
-a {
-  text-decoration: none;
-    color: #000;
 
-}
+/* ...First page - Intro page... */
+
 #page1 {
   width: 100%;
   display: flex;
@@ -29,8 +26,8 @@ a {
   padding-left : 7rem;
 }
 .left h1 {
-  /* font-size: 5.5rem; */
-   font-size: 5.5vw;
+  
+  font-size: 5.5vw;
   margin: 0%;
 }
 .left p {
@@ -44,7 +41,6 @@ a {
 }
 .btn {
   display: inline-block;
-  /* margin-left: 10rem; */
   font-size: 0.9375rem;     
   padding: 1vw 1.1vw;
   background-color: #000;
@@ -84,7 +80,7 @@ a {
 
 
 
-
+/* For responsive webpage  */
 
 @media (max-width: 1024px) {
   #page1 {

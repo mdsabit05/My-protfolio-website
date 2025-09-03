@@ -6,6 +6,8 @@ body , html {
   overflow-x: hidden;
   background: url(images/8799192.jpg) center / cover no-repeat fixed;
 }
+/* ...Second page - skills and projects... */
+
 a {
   text-decoration: none;
   color: #000;
@@ -97,22 +99,14 @@ a {
   padding: 11px;
   margin-left: 62px;
 }
-.odinProject {
+.cafeproject {
   height: 6vw;
   width: 6vw;
-  background-image: url(images/download.png);
+  background-image: url(images/[CITYPNG.COM]Brown\ Coffee\ Cup\ Logo\ Design\ HD\ PNG\ -\ 4000x4000.png);
   background-size: cover;
   padding: 10px;
   margin-left: 41px;
 } 
-.LTSProject {
-  height: 6vw;
-  width: 6vw;
-  background-image: url(images/download2.png);
-  background-size: cover;
-  margin-left: 73px;
-  margin-top: 0.5vw;
-}
 .projecttext {
   font-size: 1.2vw;
   font-family: 'Inter', sans-serif; 
@@ -120,10 +114,10 @@ a {
   padding-top: 7px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-.projectodintext {
+.projectcafetext {
    font-size: 1.2vw;
   font-family: 'Inter', sans-serif; 
-  padding-left: 54px;
+  padding-left: 38px;
   padding-top: 15px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -166,13 +160,15 @@ a {
 }
 
 
+/* for responsive website... */
+
 @media  (max-width : 1200px) { 
-    .pianoProject , .LTSProject , .odinProject{
+    .pianoProject , .LTSProject , .cafeproject{
     height : 8vw ;
     width : 8vw ;
     margin-left: 4vw;
   }
-.projecttext , .projecLTStext , .projectodintext {
+.projecttext , .projecLTStext , .projectcafetext {
   font-size: 1.7vw;
   padding-left: 4vw;
 }
@@ -180,17 +176,14 @@ a {
 }
 
 @media(max-width :1110px) {
-  .pianoProject , .LTSProject , .odinProject{
+  .pianoProject , .LTSProject , .cafeproject{
     height : 9vw ;
     width : 9vw ;
   }
-.projecttext , .projecLTStext , .projectodintext {
+.projecttext , .projecLTStext , .projectcafetext {
   font-size: 2vw;
 }
 }
-
-
-
 
 @media  (max-width : 960px) { 
 #page-2 {
@@ -207,17 +200,15 @@ a {
   font-size: 20px;
   margin-bottom: 5vh;
 }
- .pianoProject , .LTSProject , .odinProject{
+ .pianoProject , .LTSProject , .cafeProject{
     height : 11vw ;
     width : 11vw ;
   }
-  .odinProject {
+  .cafeProject {
     margin-left: 4vw;
   }
   
 }
-
-
 
 @media  (max-width : 650px) { 
   .btn {
@@ -225,18 +216,18 @@ a {
     font-size: 20px;
     margin-bottom: 5vh;
   }
-  .pianoProject, .LTSProject, .odinProject {
+  .pianoProject, .LTSProject, .cafeProject {
     height: 16vw;
     width: 16vw;
     margin-left: 6vw;
     }
-    .projecttext , .projecLTStext , .projectodintext {
+    .projecttext , .projecLTStext , .projectcafetext {
   font-size: 3.5vw;
 }
-.odinProject {
+.cafeProject {
    margin-left: 10vw;
 }
- .projectodintext {
+ .projectcafetext {
   margin-left: 5vw;
 }
    
@@ -246,7 +237,7 @@ a {
 
 @media (max-width : 576px) {
  #page-2 {
-    height: calc(100% - 172px);
+    min-height: 100vh;
     margin: 6vw;
     width: 88%;
 }
@@ -295,19 +286,18 @@ a {
 }
 
 .box2 {
-  height: autovw;
+  height: auto;
 }
-.pianoProject, .LTSProject, .odinProject {
+.pianoProject, .LTSProject, .cafeProject {
     height: 26vw;
     width: 26vw;
     margin-left: 7vw;
 }
-    .projecttext, .projecLTStext, .projectodintext {
+    .projecttext, .projecLTStext, .projectcafetext {
         font-size: 4.7vw;
         padding-left: 7vw;
     }
 }
-
 
 @media (max-width : 370px) {
   .box {

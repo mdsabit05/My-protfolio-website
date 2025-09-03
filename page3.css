@@ -8,10 +8,9 @@ body , html {
 }
 a {
   text-decoration: none;
-  color: #000;
 }
 
-/* .......Third Page....... */
+/* .......Third Page - About me page....... */
 
 #about {
   height: auto;
@@ -56,7 +55,6 @@ a {
   
 }
 
-
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -81,6 +79,7 @@ a {
   transition: 0.3sec;
 }
 
+/* ...for responsive website... */
 
 @media (max-width :960px){
 .btn {
